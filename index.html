@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- link style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Truyện Chữ</title>
+  </head>
+  <body>
+    <!----------------- Code Phần Header--------------->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="header-content">
+          <!-- logo -->
+          <a href="#!">
+            <img
+              src="./assets/img/472b36052a2c35ca98d49c66bf7626991da83643.png"
+              alt="logo"
+              class="header__logo"
+            />
+          </a>
+          <!-- navbar -->
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-item--text"> Thể Loại</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-item--text"
+                  >Bối cảnh thế giới
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-item--text">Lưu Phái</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-item--text">Danh sách</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- action -->
+          <ul class="header__list-icon">
+            <li class="header__list-icon--search">
+              <a href="#!" class="header__list--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g opacity="0.5">
+                    <path
+                      d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51031 2.99927 6.60258 3.78947 5.196 5.19605C3.78943 6.60262 2.99922 8.51035 2.99922 10.4995C2.99922 12.4887 3.78943 14.3965 5.196 15.803C6.60258 17.2096 8.51031 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="header__list-icon--profile">
+              <a href="#!" class="header__list--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M17.982 18.7249C17.2833 17.7998 16.3792 17.0496 15.3412 16.5333C14.3031 16.0171 13.1594 15.7489 12 15.7499C10.8406 15.7489 9.69688 16.0171 8.65882 16.5333C7.62075 17.0496 6.71674 17.7998 6.018 18.7249M17.982 18.7249C19.3455 17.5121 20.3071 15.9135 20.7412 14.141C21.1752 12.3686 21.0603 10.506 20.4115 8.80043C19.7627 7.09482 18.6107 5.62673 17.1084 4.59085C15.6061 3.55497 13.8243 3.00024 11.9995 3.00024C10.1747 3.00024 8.39293 3.55497 6.8906 4.59085C5.38827 5.62673 4.23633 7.09482 3.58753 8.80043C2.93874 10.506 2.82375 12.3686 3.25782 14.141C3.69188 15.9135 4.6545 17.5121 6.018 18.7249M17.982 18.7249C16.336 20.1931 14.2056 21.0031 12 20.9999C9.79403 21.0033 7.66423 20.1934 6.018 18.7249M15 9.74995C15 10.5456 14.6839 11.3087 14.1213 11.8713C13.5587 12.4339 12.7956 12.7499 12 12.7499C11.2043 12.7499 10.4413 12.4339 9.87868 11.8713C9.31607 11.3087 9 10.5456 9 9.74995C9 8.9543 9.31607 8.19124 9.87868 7.62863C10.4413 7.06602 11.2043 6.74995 12 6.74995C12.7956 6.74995 13.5587 7.06602 14.1213 7.62863C14.6839 8.19124 15 8.9543 15 9.74995Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header__list-icon--setting">
+              <a href="#!" class="header__list--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M9.59399 3.94C9.68399 3.398 10.154 3 10.704 3H13.297C13.847 3 14.317 3.398 14.407 3.94L14.62 5.221C14.683 5.595 14.933 5.907 15.265 6.091C15.339 6.131 15.412 6.174 15.485 6.218C15.809 6.414 16.205 6.475 16.56 6.342L17.777 5.886C18.0264 5.79221 18.301 5.78998 18.5519 5.87971C18.8028 5.96945 19.0136 6.14531 19.147 6.376L20.443 8.623C20.576 8.8537 20.6229 9.12413 20.5753 9.38617C20.5277 9.6482 20.3887 9.88485 20.183 10.054L19.18 10.881C18.887 11.121 18.742 11.494 18.749 11.873C18.7506 11.958 18.7506 12.043 18.749 12.128C18.742 12.506 18.887 12.878 19.179 13.118L20.184 13.946C20.608 14.296 20.718 14.9 20.444 15.376L19.146 17.623C19.0128 17.8536 18.8022 18.0296 18.5515 18.1195C18.3008 18.2094 18.0264 18.2074 17.777 18.114L16.56 17.658C16.205 17.525 15.81 17.586 15.484 17.782C15.4115 17.8261 15.3381 17.8688 15.264 17.91C14.933 18.093 14.683 18.405 14.62 18.779L14.407 20.059C14.317 20.602 13.847 21 13.297 21H10.703C10.153 21 9.68299 20.602 9.59299 20.06L9.37999 18.779C9.31799 18.405 9.06799 18.093 8.73599 17.909C8.66184 17.8681 8.58849 17.8258 8.51599 17.782C8.19099 17.586 7.79599 17.525 7.43999 17.658L6.22299 18.114C5.97372 18.2075 5.69936 18.2096 5.44869 18.1199C5.19803 18.0302 4.9873 17.8545 4.85399 17.624L3.55699 15.377C3.42394 15.1463 3.37704 14.8759 3.42465 14.6138C3.47226 14.3518 3.61128 14.1152 3.81699 13.946L4.82099 13.119C5.11299 12.879 5.25799 12.506 5.25099 12.127C5.24943 12.042 5.24943 11.957 5.25099 11.872C5.25799 11.494 5.11299 11.122 4.82099 10.882L3.81699 10.054C3.61153 9.88489 3.47267 9.64843 3.42506 9.38662C3.37746 9.12481 3.42421 8.8546 3.55699 8.624L4.85399 6.377C4.98718 6.14614 5.198 5.97006 5.4489 5.88014C5.6998 5.79021 5.97448 5.79229 6.22399 5.886L7.43999 6.342C7.79599 6.475 8.19099 6.414 8.51599 6.218C8.58799 6.174 8.66199 6.131 8.73599 6.09C9.06799 5.907 9.31799 5.595 9.37999 5.221L9.59399 3.94Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!----------------- Code Phần promotion--------------->
+
+    <section class="promotion">
+      <h1 class="promotion__heading">
+        Website Đọc truyện chữ, truyện dịch, truyện convert , truyện full hay
+        nhất
+      </h1>
+    </section>
+    <!----------------- Code Phần novel--------------->
+    <section class="novel">
+      <div class="main-content">
+       <div class="novel-content">
+     <!-- Left editor-recommendations-->
+  <section class="novel__list--left">
+    <h1 class="novel__heading-left">Biên tập viên đề cử</h1>
+    <!-- novel row 1 -->
+     <div class="novel-row">
+      <!-- row-left -->
+<section class="novel-item">
+  <figure>
+    <img src="./assets/img/quái đàm cửa hàn.jpg" alt="" class="novel__avatar">
+  </figure>
+  <div class="novel__content">
+    <h2 class="novel__heading">Quái đàm cửa hàng phố kinh
+doanh hằng ngày</h2>
+    <p class="novel__desc">️ ĐQL không được tự sửa raw/up file/xó
+a file bao gồm thêm tên phó bản etc M…</p>
+    <div class="novel__more">
+      <div class="novel__more-left">
+        <span class="novel__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+  <path d="M5.82999 4.5H13.83M5.82999 8H13.83M5.82999 11.5H13.83M2.82999 4.5H2.83465V4.50533H2.82999V4.5ZM3.07999 4.5C3.07999 4.5663 3.05365 4.62989 3.00676 4.67678C2.95988 4.72366 2.89629 4.75 2.82999 4.75C2.76368 4.75 2.70009 4.72366 2.65321 4.67678C2.60633 4.62989 2.57999 4.5663 2.57999 4.5C2.57999 4.4337 2.60633 4.37011 2.65321 4.32322C2.70009 4.27634 2.76368 4.25 2.82999 4.25C2.89629 4.25 2.95988 4.27634 3.00676 4.32322C3.05365 4.37011 3.07999 4.4337 3.07999 4.5ZM2.82999 8H2.83465V8.00533H2.82999V8ZM3.07999 8C3.07999 8.0663 3.05365 8.12989 3.00676 8.17678C2.95988 8.22366 2.89629 8.25 2.82999 8.25C2.76368 8.25 2.70009 8.22366 2.65321 8.17678C2.60633 8.12989 2.57999 8.0663 2.57999 8C2.57999 7.9337 2.60633 7.87011 2.65321 7.82322C2.70009 7.77634 2.76368 7.75 2.82999 7.75C2.89629 7.75 2.95988 7.77634 3.00676 7.82322C3.05365 7.87011 3.07999 7.9337 3.07999 8ZM2.82999 11.5H2.83465V11.5053H2.82999V11.5ZM3.07999 11.5C3.07999 11.5663 3.05365 11.6299 3.00676 11.6768C2.95988 11.7237 2.89629 11.75 2.82999 11.75C2.76368 11.75 2.70009 11.7237 2.65321 11.6768C2.60633 11.6299 2.57999 11.5663 2.57999 11.5C2.57999 11.4337 2.60633 11.3701 2.65321 11.3232C2.70009 11.2763 2.76368 11.25 2.82999 11.25C2.89629 11.25 2.95988 11.2763 3.00676 11.3232C3.05365 11.3701 3.07999 11.4337 3.07999 11.5Z" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </span>
+        <span class="novel__chapter">108 chương</span>
+      </div>
+      <span class="novel__genre">Khoa huyễn</span>
+    </div>
+  </div>
+</section>
+      <!-- row-right -->
+       <section class="novel-item">
+  <figure>
+    <img src="./assets/img/sono mono.jpg" alt="" class="novel__avatar">
+  </figure>
+  <div class="novel__content">
+    <h2 class="novel__heading">Sono Mono Nochi Ni…</h2>
+    <p class="novel__desc">Wazu một người thành thị bình thường,
+      vì một vài nguyên nhân anh đã tự bế q…
+</p>
+    <div class="novel__more">
+      <div class="novel__more-left">
+        <span class="novel__icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+  <path d="M5.82999 4.5H13.83M5.82999 8H13.83M5.82999 11.5H13.83M2.82999 4.5H2.83465V4.50533H2.82999V4.5ZM3.07999 4.5C3.07999 4.5663 3.05365 4.62989 3.00676 4.67678C2.95988 4.72366 2.89629 4.75 2.82999 4.75C2.76368 4.75 2.70009 4.72366 2.65321 4.67678C2.60633 4.62989 2.57999 4.5663 2.57999 4.5C2.57999 4.4337 2.60633 4.37011 2.65321 4.32322C2.70009 4.27634 2.76368 4.25 2.82999 4.25C2.89629 4.25 2.95988 4.27634 3.00676 4.32322C3.05365 4.37011 3.07999 4.4337 3.07999 4.5ZM2.82999 8H2.83465V8.00533H2.82999V8ZM3.07999 8C3.07999 8.0663 3.05365 8.12989 3.00676 8.17678C2.95988 8.22366 2.89629 8.25 2.82999 8.25C2.76368 8.25 2.70009 8.22366 2.65321 8.17678C2.60633 8.12989 2.57999 8.0663 2.57999 8C2.57999 7.9337 2.60633 7.87011 2.65321 7.82322C2.70009 7.77634 2.76368 7.75 2.82999 7.75C2.89629 7.75 2.95988 7.77634 3.00676 7.82322C3.05365 7.87011 3.07999 7.9337 3.07999 8ZM2.82999 11.5H2.83465V11.5053H2.82999V11.5ZM3.07999 11.5C3.07999 11.5663 3.05365 11.6299 3.00676 11.6768C2.95988 11.7237 2.89629 11.75 2.82999 11.75C2.76368 11.75 2.70009 11.7237 2.65321 11.6768C2.60633 11.6299 2.57999 11.5663 2.57999 11.5C2.57999 11.4337 2.60633 11.3701 2.65321 11.3232C2.70009 11.2763 2.76368 11.25 2.82999 11.25C2.89629 11.25 2.95988 11.2763 3.00676 11.3232C3.05365 11.3701 3.07999 11.4337 3.07999 11.5Z" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+        <span class="novel__chapter">8 chương</span>
+      </div>
+      <span class="novel__genre">Sắc</span>
+    </div>
+  </div>
+</section>
+     </div>
+     <!-- row2 -->
+     <div class="novel-row">
+      <!-- row-left -->
+<section class="novel-item">
+  <figure>
+    <img src="./assets/img/sinh hoạt chức....jpg" alt="" class="novel__avatar">
+  </figure>
+  <div class="novel__content">
+    <h2 class="novel__heading">Sinh hoạt chức nghiệp nhất phế?
+Nhưng ta có thần cấp thiên phú!</h2>
+    <p class="novel__desc">Văn án toàn dân chuyển chức trò chơi x
+âm lấn mạt thế sảng văn nữ cường vô…</p>
+    <div class="novel__more">
+      <div class="novel__more-left">
+        <span class="novel__icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+  <path d="M5.82999 4.5H13.83M5.82999 8H13.83M5.82999 11.5H13.83M2.82999 4.5H2.83465V4.50533H2.82999V4.5ZM3.07999 4.5C3.07999 4.5663 3.05365 4.62989 3.00676 4.67678C2.95988 4.72366 2.89629 4.75 2.82999 4.75C2.76368 4.75 2.70009 4.72366 2.65321 4.67678C2.60633 4.62989 2.57999 4.5663 2.57999 4.5C2.57999 4.4337 2.60633 4.37011 2.65321 4.32322C2.70009 4.27634 2.76368 4.25 2.82999 4.25C2.89629 4.25 2.95988 4.27634 3.00676 4.32322C3.05365 4.37011 3.07999 4.4337 3.07999 4.5ZM2.82999 8H2.83465V8.00533H2.82999V8ZM3.07999 8C3.07999 8.0663 3.05365 8.12989 3.00676 8.17678C2.95988 8.22366 2.89629 8.25 2.82999 8.25C2.76368 8.25 2.70009 8.22366 2.65321 8.17678C2.60633 8.12989 2.57999 8.0663 2.57999 8C2.57999 7.9337 2.60633 7.87011 2.65321 7.82322C2.70009 7.77634 2.76368 7.75 2.82999 7.75C2.89629 7.75 2.95988 7.77634 3.00676 7.82322C3.05365 7.87011 3.07999 7.9337 3.07999 8ZM2.82999 11.5H2.83465V11.5053H2.82999V11.5ZM3.07999 11.5C3.07999 11.5663 3.05365 11.6299 3.00676 11.6768C2.95988 11.7237 2.89629 11.75 2.82999 11.75C2.76368 11.75 2.70009 11.7237 2.65321 11.6768C2.60633 11.6299 2.57999 11.5663 2.57999 11.5C2.57999 11.4337 2.60633 11.3701 2.65321 11.3232C2.70009 11.2763 2.76368 11.25 2.82999 11.25C2.89629 11.25 2.95988 11.2763 3.00676 11.3232C3.05365 11.3701 3.07999 11.4337 3.07999 11.5Z" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+        <span class="novel__chapter">160 chương</span>
+      </div>
+      <span class="novel__genre">Huyền huyễn</span>
+    </div>
+  </div>
+</section>
+      <!-- row-right -->
+       <section class="novel-item">
+  <figure>
+    <img src="./assets/img/tang thi.jpg" alt="" class="novel__avatar">
+  </figure>
+  <div class="novel__content">
+    <h2 class="novel__heading">Tang thi? Thiêu ủ phân</h2>
+    <p class="novel__desc">Bảo hộ khu ra ngoài thám hiểm nhân viê
+n trong rừng rậm lạc đường ngoài mu…</p>
+    <div class="novel__more">
+      <div class="novel__more-left">
+        <span class="novel__icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+  <path d="M5.82999 4.5H13.83M5.82999 8H13.83M5.82999 11.5H13.83M2.82999 4.5H2.83465V4.50533H2.82999V4.5ZM3.07999 4.5C3.07999 4.5663 3.05365 4.62989 3.00676 4.67678C2.95988 4.72366 2.89629 4.75 2.82999 4.75C2.76368 4.75 2.70009 4.72366 2.65321 4.67678C2.60633 4.62989 2.57999 4.5663 2.57999 4.5C2.57999 4.4337 2.60633 4.37011 2.65321 4.32322C2.70009 4.27634 2.76368 4.25 2.82999 4.25C2.89629 4.25 2.95988 4.27634 3.00676 4.32322C3.05365 4.37011 3.07999 4.4337 3.07999 4.5ZM2.82999 8H2.83465V8.00533H2.82999V8ZM3.07999 8C3.07999 8.0663 3.05365 8.12989 3.00676 8.17678C2.95988 8.22366 2.89629 8.25 2.82999 8.25C2.76368 8.25 2.70009 8.22366 2.65321 8.17678C2.60633 8.12989 2.57999 8.0663 2.57999 8C2.57999 7.9337 2.60633 7.87011 2.65321 7.82322C2.70009 7.77634 2.76368 7.75 2.82999 7.75C2.89629 7.75 2.95988 7.77634 3.00676 7.82322C3.05365 7.87011 3.07999 7.9337 3.07999 8ZM2.82999 11.5H2.83465V11.5053H2.82999V11.5ZM3.07999 11.5C3.07999 11.5663 3.05365 11.6299 3.00676 11.6768C2.95988 11.7237 2.89629 11.75 2.82999 11.75C2.76368 11.75 2.70009 11.7237 2.65321 11.6768C2.60633 11.6299 2.57999 11.5663 2.57999 11.5C2.57999 11.4337 2.60633 11.3701 2.65321 11.3232C2.70009 11.2763 2.76368 11.25 2.82999 11.25C2.89629 11.25 2.95988 11.2763 3.00676 11.3232C3.05365 11.3701 3.07999 11.4337 3.07999 11.5Z" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+        <span class="novel__chapter">137 chương</span>
+      </div>
+      <span class="novel__genre">Huyền huyễn</span>
+    </div>
+  </div>
+</section>
+     </div>
+     <!-- row3 -->
+     <div class="novel-row">
+      <!-- row-left -->
+<section class="novel-item">
+  <figure>
+    <img src="./assets/img/chết thảm trọng sinh.jpg" alt="" class="novel__avatar">
+  </figure>
+  <div class="novel__content">
+    <h2 class="novel__heading">Chết thảm trọng sinh sau, thành vai
+ác quyền thần chưởng thượng kiều</h2>
+    <p class="novel__desc">Lâm vọng thư mẫu thân chết sớm phụ k
+hông từ hầu phủ gian nan độ nhật vài …</p>
+    <div class="novel__more">
+      <div class="novel__more-left">
+        <span class="novel__icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+  <path d="M5.82999 4.5H13.83M5.82999 8H13.83M5.82999 11.5H13.83M2.82999 4.5H2.83465V4.50533H2.82999V4.5ZM3.07999 4.5C3.07999 4.5663 3.05365 4.62989 3.00676 4.67678C2.95988 4.72366 2.89629 4.75 2.82999 4.75C2.76368 4.75 2.70009 4.72366 2.65321 4.67678C2.60633 4.62989 2.57999 4.5663 2.57999 4.5C2.57999 4.4337 2.60633 4.37011 2.65321 4.32322C2.70009 4.27634 2.76368 4.25 2.82999 4.25C2.89629 4.25 2.95988 4.27634 3.00676 4.32322C3.05365 4.37011 3.07999 4.4337 3.07999 4.5ZM2.82999 8H2.83465V8.00533H2.82999V8ZM3.07999 8C3.07999 8.0663 3.05365 8.12989 3.00676 8.17678C2.95988 8.22366 2.89629 8.25 2.82999 8.25C2.76368 8.25 2.70009 8.22366 2.65321 8.17678C2.60633 8.12989 2.57999 8.0663 2.57999 8C2.57999 7.9337 2.60633 7.87011 2.65321 7.82322C2.70009 7.77634 2.76368 7.75 2.82999 7.75C2.89629 7.75 2.95988 7.77634 3.00676 7.82322C3.05365 7.87011 3.07999 7.9337 3.07999 8ZM2.82999 11.5H2.83465V11.5053H2.82999V11.5ZM3.07999 11.5C3.07999 11.5663 3.05365 11.6299 3.00676 11.6768C2.95988 11.7237 2.89629 11.75 2.82999 11.75C2.76368 11.75 2.70009 11.7237 2.65321 11.6768C2.60633 11.6299 2.57999 11.5663 2.57999 11.5C2.57999 11.4337 2.60633 11.3701 2.65321 11.3232C2.70009 11.2763 2.76368 11.25 2.82999 11.25C2.89629 11.25 2.95988 11.2763 3.00676 11.3232C3.05365 11.3701 3.07999 11.4337 3.07999 11.5Z" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+        <span class="novel__chapter">385 chương</span>
+      </div>
+      <span class="novel__genre">Huyền huyễn</span>
+    </div>
+  </div>
+</section>
+      <!-- row-right -->
+       <section class="novel-item">
+  <figure>
+    <img src="./assets/img/nhà giàu số 1.jpg" alt="" class="novel__avatar">
+  </figure>
+  <div class="novel__content">
+    <h2 class="novel__heading">Nhà giàu số một ba mẹ bị đoạt,
+manh nhãi con mê điên đại lão c…</h2>
+    <p class="novel__desc">đoàn sủng ba tuổi rưỡi vô CP vạn nhân
+mê ngọt sủng thân tình văn Manh ma…</p>
+    <div class="novel__more">
+      <div class="novel__more-left">
+        <span class="novel__icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+  <path d="M5.82999 4.5H13.83M5.82999 8H13.83M5.82999 11.5H13.83M2.82999 4.5H2.83465V4.50533H2.82999V4.5ZM3.07999 4.5C3.07999 4.5663 3.05365 4.62989 3.00676 4.67678C2.95988 4.72366 2.89629 4.75 2.82999 4.75C2.76368 4.75 2.70009 4.72366 2.65321 4.67678C2.60633 4.62989 2.57999 4.5663 2.57999 4.5C2.57999 4.4337 2.60633 4.37011 2.65321 4.32322C2.70009 4.27634 2.76368 4.25 2.82999 4.25C2.89629 4.25 2.95988 4.27634 3.00676 4.32322C3.05365 4.37011 3.07999 4.4337 3.07999 4.5ZM2.82999 8H2.83465V8.00533H2.82999V8ZM3.07999 8C3.07999 8.0663 3.05365 8.12989 3.00676 8.17678C2.95988 8.22366 2.89629 8.25 2.82999 8.25C2.76368 8.25 2.70009 8.22366 2.65321 8.17678C2.60633 8.12989 2.57999 8.0663 2.57999 8C2.57999 7.9337 2.60633 7.87011 2.65321 7.82322C2.70009 7.77634 2.76368 7.75 2.82999 7.75C2.89629 7.75 2.95988 7.77634 3.00676 7.82322C3.05365 7.87011 3.07999 7.9337 3.07999 8ZM2.82999 11.5H2.83465V11.5053H2.82999V11.5ZM3.07999 11.5C3.07999 11.5663 3.05365 11.6299 3.00676 11.6768C2.95988 11.7237 2.89629 11.75 2.82999 11.75C2.76368 11.75 2.70009 11.7237 2.65321 11.6768C2.60633 11.6299 2.57999 11.5663 2.57999 11.5C2.57999 11.4337 2.60633 11.3701 2.65321 11.3232C2.70009 11.2763 2.76368 11.25 2.82999 11.25C2.89629 11.25 2.95988 11.2763 3.00676 11.3232C3.05365 11.3701 3.07999 11.4337 3.07999 11.5Z" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+        <span class="novel__chapter">320 chương</span>
+      </div>
+      <span class="novel__genre">Đô thị</span>
+    </div>
+  </div>
+</section>
+     </div>
+     <!-- row4 -->
+           <div class="novel-row">
+      <!-- row-left -->
+<section class="novel-item">
+  <figure>
+    <img src="./assets/img/lấy cái gì cứu vớt.jpg" alt="" class="novel__avatar">
+  </figure>
+  <div class="novel__content">
+    <h2 class="novel__heading">Lấy cái gì cứu vớt ta đồng học</h2>
+    <p class="novel__desc">mất trí nhớ là một loại cái gì thể nghiệm
+Thương kiều duy rất khó hình dung nh…</p>
+    <div class="novel__more">
+      <div class="novel__more-left">
+        <span class="novel__icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+  <path d="M5.82999 4.5H13.83M5.82999 8H13.83M5.82999 11.5H13.83M2.82999 4.5H2.83465V4.50533H2.82999V4.5ZM3.07999 4.5C3.07999 4.5663 3.05365 4.62989 3.00676 4.67678C2.95988 4.72366 2.89629 4.75 2.82999 4.75C2.76368 4.75 2.70009 4.72366 2.65321 4.67678C2.60633 4.62989 2.57999 4.5663 2.57999 4.5C2.57999 4.4337 2.60633 4.37011 2.65321 4.32322C2.70009 4.27634 2.76368 4.25 2.82999 4.25C2.89629 4.25 2.95988 4.27634 3.00676 4.32322C3.05365 4.37011 3.07999 4.4337 3.07999 4.5ZM2.82999 8H2.83465V8.00533H2.82999V8ZM3.07999 8C3.07999 8.0663 3.05365 8.12989 3.00676 8.17678C2.95988 8.22366 2.89629 8.25 2.82999 8.25C2.76368 8.25 2.70009 8.22366 2.65321 8.17678C2.60633 8.12989 2.57999 8.0663 2.57999 8C2.57999 7.9337 2.60633 7.87011 2.65321 7.82322C2.70009 7.77634 2.76368 7.75 2.82999 7.75C2.89629 7.75 2.95988 7.77634 3.00676 7.82322C3.05365 7.87011 3.07999 7.9337 3.07999 8ZM2.82999 11.5H2.83465V11.5053H2.82999V11.5ZM3.07999 11.5C3.07999 11.5663 3.05365 11.6299 3.00676 11.6768C2.95988 11.7237 2.89629 11.75 2.82999 11.75C2.76368 11.75 2.70009 11.7237 2.65321 11.6768C2.60633 11.6299 2.57999 11.5663 2.57999 11.5C2.57999 11.4337 2.60633 11.3701 2.65321 11.3232C2.70009 11.2763 2.76368 11.25 2.82999 11.25C2.89629 11.25 2.95988 11.2763 3.00676 11.3232C3.05365 11.3701 3.07999 11.4337 3.07999 11.5Z" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+        <span class="novel__chapter">133 chương</span>
+      </div>
+      <span class="novel__genre">Đô thị</span>
+    </div>
+  </div>
+</section>
+      <!-- row-right -->
+       <section class="novel-item">
+  <figure>
+    <img src="./assets/img/trò chơi xâm lấn.jpg" alt="" class="novel__avatar">
+  </figure>
+  <div class="novel__content">
+    <h2 class="novel__heading">Trò chơi xâm lấn: Khai cục tùy cơ
+rút ra một hệ thống</h2>
+    <p class="novel__desc">Văn án vô CP sảng văn vả mặt vô địch t
+hăng cấp lưu một đường hoành đẩy T…</p>
+    <div class="novel__more">
+      <div class="novel__more-left">
+        <span class="novel__icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+  <path d="M5.82999 4.5H13.83M5.82999 8H13.83M5.82999 11.5H13.83M2.82999 4.5H2.83465V4.50533H2.82999V4.5ZM3.07999 4.5C3.07999 4.5663 3.05365 4.62989 3.00676 4.67678C2.95988 4.72366 2.89629 4.75 2.82999 4.75C2.76368 4.75 2.70009 4.72366 2.65321 4.67678C2.60633 4.62989 2.57999 4.5663 2.57999 4.5C2.57999 4.4337 2.60633 4.37011 2.65321 4.32322C2.70009 4.27634 2.76368 4.25 2.82999 4.25C2.89629 4.25 2.95988 4.27634 3.00676 4.32322C3.05365 4.37011 3.07999 4.4337 3.07999 4.5ZM2.82999 8H2.83465V8.00533H2.82999V8ZM3.07999 8C3.07999 8.0663 3.05365 8.12989 3.00676 8.17678C2.95988 8.22366 2.89629 8.25 2.82999 8.25C2.76368 8.25 2.70009 8.22366 2.65321 8.17678C2.60633 8.12989 2.57999 8.0663 2.57999 8C2.57999 7.9337 2.60633 7.87011 2.65321 7.82322C2.70009 7.77634 2.76368 7.75 2.82999 7.75C2.89629 7.75 2.95988 7.77634 3.00676 7.82322C3.05365 7.87011 3.07999 7.9337 3.07999 8ZM2.82999 11.5H2.83465V11.5053H2.82999V11.5ZM3.07999 11.5C3.07999 11.5663 3.05365 11.6299 3.00676 11.6768C2.95988 11.7237 2.89629 11.75 2.82999 11.75C2.76368 11.75 2.70009 11.7237 2.65321 11.6768C2.60633 11.6299 2.57999 11.5663 2.57999 11.5C2.57999 11.4337 2.60633 11.3701 2.65321 11.3232C2.70009 11.2763 2.76368 11.25 2.82999 11.25C2.89629 11.25 2.95988 11.2763 3.00676 11.3232C3.05365 11.3701 3.07999 11.4337 3.07999 11.5Z" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+        <span class="novel__chapter">114 chương</span>
+      </div>
+      <span class="novel__genre">Khoa huyễn</span>
+    </div>
+  </div>
+</section>
+     </div>
+  </section>
+     <!-- right novel reading -->
+      <section class="novel-reading">
+        <h1 class="novel__heading-right">Đang đọc</h1>
+       <div class="novel__continue-box">
+          <!-- row1 -->
+          <section class="novel__continue">
+            <h2 class="novel__continue-title">Hoàng thúc hảo eo nhỏ, kiều kiều vương phi…</h2>
+            <span><a class="novel__continue-read" href="#!">Đọc tiếp</a> </span>
+          </section>
+          <!-- row2 -->
+  <section class="novel__continue">
+            <h2 class="novel__continue-title">Đại đế thế gia nghèo dưỡng ta? Nhưng ta ngộ…</h2>
+            <span><a class="novel__continue-read" href="#!">Đọc tiếp</a> </span>
+          </section>
+          <!-- row3 -->
+  <section class="novel__continue">
+            <h2 class="novel__continue-title">Cùng đối thủ một mất một còn thành hôn sau</h2>
+            <span><a class="novel__continue-read" href="#!">Đọc tiếp</a> </span>
+          </section>
+          <!-- row4 -->
+  <section class="novel__continue">
+            <h2 class="novel__continue-title">Ở sinh tồn trò chơi bị khắc kim đại lão theo dõi</h2>
+            <span><a class="novel__continue-read" href="#!">Đọc tiếp</a> </span>
+          </section>
+          <!-- row5 -->
+  <section class="novel__continue">
+            <h2 class="novel__continue-title">Bị quốc đủ phong sát sau, ở tây giáp gan thuộc…</h2>
+            <span><a class="novel__continue-read" href="#!">Đọc tiếp</a> </span>
+          </section>
+          <!-- row6 -->
+  <section class="novel__continue">
+            <h2 class="novel__continue-title">Luyến ái muốn ở nạp đao sau Sakamoto Days </h2>
+            <span><a class="novel__continue-read" href="#!">Đọc tiếp</a> </span>
+          </section>
+          <!-- row7 -->
+  <section class="novel__continue">
+            <h2 class="novel__continue-title">Người chơi đã buông xuống, đạo hữu thỉnh chịu…</h2>
+            <span><a class="novel__continue-read" href="#!">Đọc tiếp</a> </span>
+          </section>
+          <!-- row8 -->
+           <section class="novel__continue">
+            <h2 class="novel__continue-title">Mỗi người đều muốn giết ta chứng đạo</h2>
+            <span><a class="novel__continue-read" href="#!">Đọc tiếp</a> </span>
+          </section>
+       </div>
+      </section>
+
+  
+       </div>
+  </body>
+</html>
+
+
+  </body>
+</html>

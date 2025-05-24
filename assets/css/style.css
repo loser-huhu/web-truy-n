@@ -505,3 +505,42 @@ button {
   bottom: -14px;
   left: -185.22px;
 }
+.rank__low {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  gap: 18px;
+}
+.rank__icon-low {
+  width: 24px;
+  height: 32px;
+}
+.rank__heading-low {
+  width: 249.73px;
+  height: 17px;
+  color: #2b2b2b;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rank__strong {
+  width: 24px;
+  height: 32px;
+  color: #2b2b2b;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 13.672px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 146.286% */
+}
+.rank__heading-low:hover,
+.rank__heading-top1:hover,
+.rank__genre:hover,
+.rank__author:hover {
+  text-decoration: underline;
+}

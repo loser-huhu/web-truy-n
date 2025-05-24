@@ -145,7 +145,8 @@ button {
   height: 128px;
 }
 .novel__heading {
-  width: 206.81px;
+  display: block;
+  width: 208.81px;
   height: 45px;
   color: #2b2b2b;
   font-family: Roboto;

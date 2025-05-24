@@ -113,7 +113,8 @@ button {
 }
 .novel-item {
   display: flex;
-  transition: 2s;
+  transition: 0.2s;
+  padding: 10px;
 }
 .novel-item:hover {
   background: #c6c2c2;
@@ -129,7 +130,7 @@ button {
   padding: 20px 20px 56px 16px;
 }
 .novel__heading-left {
-  width: 207.06px;
+  width: 220.06px;
   height: 32px;
   color: #2b2b2b;
   font-family: Roboto;
@@ -207,7 +208,7 @@ button {
 }
 .novel__continue:hover {
   background: #bec5c6;
-  border-radius: 99px;
+  border-radius: 10px;
 }
 .novel__heading-right {
   width: 102.93px;

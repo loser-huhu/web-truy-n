@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- reset css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/darkmode.css">
     <!-- link style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- embed font -->
@@ -14,6 +15,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <!-- aos library -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- animetion -->
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Truyện Chữ</title>
   </head>
   <body >
@@ -23,10 +31,10 @@
         <div class="header-content">
           <!-- logo -->
           <a href="#!">
-            <img
+            <img 
               src="./assets/img/472b36052a2c35ca98d49c66bf7626991da83643.png"
               alt="logo"
-              class="header__logo"
+              class="header__logo animate__animated animate__tada" 
             />
           </a>
           <!-- navbar -->
@@ -50,6 +58,23 @@
           </nav>
           <!-- action -->
           <ul class="header__list-icon">
+            <!-- Toggle Dark/Light Mode -->
+<div class="toggleWrapper">
+  <input class="input" id="dn" type="checkbox" />
+  <label class="toggle" for="dn">
+    <span class="toggle__handler">
+      <span class="crater crater--1"></span>
+      <span class="crater crater--2"></span>
+      <span class="crater crater--3"></span>
+    </span>
+    <span class="star star--1"></span>
+    <span class="star star--2"></span>
+    <span class="star star--3"></span>
+    <span class="star star--4"></span>
+    <span class="star star--5"></span>
+    <span class="star star--6"></span>
+  </label>
+</div>
             <li class="header__list-icon--search">
               <a href="#!" class="header__list--icon">
                 <svg
@@ -116,18 +141,22 @@
                 </svg>
               </a>
             </li>
+            
           </ul>
         </div>
       </div>
     </header>
     <!----------------- Code Phần promotion--------------->
 
-    <section class="promotion">
-      <h1 class="promotion__heading">
-        Website Đọc truyện chữ, truyện dịch, truyện convert , truyện full hay
-        nhất
-      </h1>
-    </section>
+   <section class="promotion">
+  <div class="promotion__wrapper">
+    <h1 class="promotion__heading">
+      <span>Website Đọc truyện chữ, truyện dịch, truyện convert, truyện full hay nhất</span>
+      <span>Website Đọc truyện chữ, truyện dịch, truyện convert, truyện full hay nhất</span>
+    </h1>
+  </div>
+</section>
+
     <!----------------- Code Phần novel--------------->
     <section class="novel">
       <div class="main-content">
@@ -140,7 +169,7 @@
       <!-- row-left -->
 <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/quái đàm cửa hàn.jpg" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/quái đàm cửa hàn.jpg" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2 ><a class="novel__heading" href="#!">Quái đàm cửa hàng phố kinh doanh hằng ngày</a>
@@ -163,7 +192,7 @@
       <!-- row-right -->
        <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/sono mono.jpg" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/sono mono.jpg" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Sono Mono Nochi Ni…</a></h2>
@@ -186,7 +215,7 @@
       <!-- row-left -->
 <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/sinh hoạt chức....jpg" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/sinh hoạt chức....jpg" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Sinh hoạt chức nghiệp nhất phế? Nhưng ta có thần cấp thiên phú!</a></h2>
@@ -205,7 +234,7 @@
       <!-- row-right -->
        <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/tang thi.jpg" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/tang thi.jpg" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Tang thi? Thiêu ủ phân</a></h2>
@@ -227,7 +256,7 @@
       <!-- row-left -->
 <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/chết thảm trọng sinh.jpg" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/chết thảm trọng sinh.jpg" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Chết thảm trọng sinh sau, thành vai ác quyền thần chưởng thượng kiều</a></h2>
@@ -246,7 +275,7 @@
       <!-- row-right -->
        <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/nhà giàu số 1.jpg" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/nhà giàu số 1.jpg" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Nhà giàu số một ba mẹ bị đoạt,manh nhãi con mê điên đại lão c…</a></h2>
@@ -268,7 +297,7 @@
       <!-- row-left -->
 <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/lấy cái gì cứu vớt.jpg" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/lấy cái gì cứu vớt.jpg" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Lấy cái gì cứu vớt ta đồng học</a></h2>
@@ -287,7 +316,7 @@
       <!-- row-right -->
        <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/trò chơi xâm lấn.jpg" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/trò chơi xâm lấn.jpg" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Trò chơi xâm lấn: Khai cục tùy cơ rút ra một hệ thống</a></h2>
@@ -359,10 +388,15 @@
     <div class="main-content">
       <!-- update-top -->
       <section class="update-top">
-        <h1 class="update-top__heading">Mới cập nhật</h1>
+        <h1 class="update-top__heading" data-aos-duration="600" data-aos="flip-left"
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine">Mới cập nhật</h1>
         <span class="update-top__next-icon">
-          <a href="#!">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24" fill="none">
+          <a data-aos-duration='3000' href="#!">
+            <svg data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500"  xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24" fill="none">
     <path d="M21.25 8.25L25 12M25 12L21.25 15.75M25 12H7" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
           </a>
@@ -545,7 +579,7 @@
     <span class="rank__genre">Đô thị</span>
   </div>
 </ul>
-<figure class="rank__pseudo"> <img class="rank__img" src="./assets/img/anhtop1docnhieu.jpg" alt="avatar-novel"></figure>
+<figure class="rank__pseudo"> <img class="rank__img" data-aos-duration='2000' data-aos="flip-left" src="./assets/img/anhtop1docnhieu.jpg" alt="avatar-novel"></figure>
   </div>
     <!-- row2  -->
 <div class="rank__low">
@@ -611,7 +645,7 @@
     <span class="rank__genre">Tiên hiệp</span>
   </div>
 </ul>
-<figure class="rank__pseudo"> <img class="rank__img" src="./assets/img/dinhcapkhivan.jpg" alt="avatar-novel"></figure>
+<figure class="rank__pseudo"> <img class="rank__img" data-aos-duration='2000' data-aos="flip-left" src="./assets/img/dinhcapkhivan.jpg" alt="avatar-novel"></figure>
   </div>
   <!-- row2 -->
 <div class="rank__low">
@@ -677,7 +711,7 @@
     <span class="rank__genre">Huyền huyễn</span>
   </div>
 </ul>
-<figure class="rank__pseudo"> <img class="rank__img" src="./assets/img/nguoidangcaovo.png" alt="avatar-novel"></figure>
+<figure class="rank__pseudo"> <img class="rank__img" data-aos-duration='2000' data-aos="flip-left" src="./assets/img/nguoidangcaovo.png" alt="avatar-novel"></figure>
   </div>
     <!-- row2 -->
 <div class="rank__low">
@@ -743,7 +777,7 @@
       <!-- row-left -->
 <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/tranhoitruongsinh.png" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/tranhoitruongsinh.png" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2 ><a class="novel__heading" href="#!">Trận Hỏi Trường Sinh</a>
@@ -766,7 +800,7 @@
       <!-- row-right -->
        <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/quybichichu.png" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/quybichichu.png" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Quỷ Bí Chi Chủ</a></h2>
@@ -789,7 +823,7 @@
       <!-- row-left -->
 <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/tathatkhongphaicaij.png" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/tathatkhongphaicaij.png" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Ta Thật Không Phải Cái Thế Cao Nhân</a></h2>
@@ -808,7 +842,7 @@
       <!-- row-right -->
        <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/tudaithubatdautienhoa.png" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/tudaithubatdautienhoa.png" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Từ Đại Thụ Bắt Đầu Tiến Hóa</a></h2>
@@ -830,7 +864,7 @@
       <!-- row-left -->
 <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/noaavt.png" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/noaavt.png" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Phán Quyết Của Thẩm Phán 3</a></h2>
@@ -849,7 +883,7 @@
       <!-- row-right -->
        <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/noaavt.png" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/noaavt.png" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Sau Khi Trà Xanh Xuyên Vào Tiểu Thuyết Kinh Dị (Phần 3)</a></h2>
@@ -871,7 +905,7 @@
       <!-- row-left -->
 <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/noaavt.png" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/noaavt.png" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Tiếng Mõ Canh Đổ Đều Đều</a></h2>
@@ -890,7 +924,7 @@
       <!-- row-right -->
        <article class="novel-item">
   <a href="#!">
-    <img src="./assets/img/noaavt.png" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/noaavt.png" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Công Chúa Không Dễ Dàng: Trần Tố Ngọc</a></h2>
@@ -915,7 +949,7 @@
         <!-- 1 -->
  <article class="novel-item complete-item">
   <a href="#!">
-    <img src="./assets/img/cainaykieuthe.jpg" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/cainaykieuthe.jpg" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Cái này kiều thê goá phụ ta đương định rồi</a></h2>
@@ -935,7 +969,7 @@
         <!-- 2 -->
  <article class="novel-item complete-item">
   <a href="#!">
-    <img src="./assets/img/nieuniencahanh.jpg" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/nieuniencahanh.jpg" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Thiếu Niên Ca Hành - Chu Mộc Nam</a></h2>
@@ -955,7 +989,7 @@
         <!-- 3 -->
  <article class="novel-item complete-item">
   <a href="#!">
-    <img src="./assets/img/quybichichu.png" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/quybichichu.png" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Quỷ Bí Chi Chủ</a></h2>
@@ -975,7 +1009,7 @@
         <!-- 4 -->
  <article class="novel-item complete-item">
   <a href="#!">
-    <img src="./assets/img/noaavt.png" alt="novel-logo" class="novel__avatar">
+    <img src="./assets/img/noaavt.png" alt="novel-logo" class="novel__avatar" data-aos-offset="50" data-aos="zoom-in">
   </a>
   <div class="novel__content">
     <h2><a href="#!"class="novel__heading">Năm Thứ Hai Sau Khi Kết Hôn</a></h2>
@@ -1174,5 +1208,10 @@
   </ul>
   </div>
 </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script src="darkmode.js"></script>
   </body>
 </html>

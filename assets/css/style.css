@@ -34,7 +34,7 @@ button {
   position: sticky;
   z-index: 2;
   width: 100vw;
-  top: -8px;
+  top: 0px;
 }
 .header-content {
   display: flex;
@@ -66,8 +66,6 @@ button {
 }
 /* ==========================================promotion======================== */
 .promotion {
-  position: relative;
-  overflow: hidden;
   height: 48px;
   padding: 12px 144px;
   background: #fff;
@@ -76,22 +74,36 @@ button {
   display: flex;
   align-items: center;
 }
+.promotion {
+  width: 100%;
+  background: #f0f0f0;
+}
+
+.promotion__wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
 .promotion__heading {
   display: inline-block;
   white-space: nowrap;
-  animation: chayTrai 10s linear infinite;
-  color: black;
-  position: absolute;
-  left: 100%;
-  font-size: 16px;
+  animation: chayTrai 5s linear infinite;
 }
+
+.promotion__heading span {
+  display: inline-block;
+  padding-right: 600px; /* khoảng cách giữa 2 lần lặp */
+  font-size: 16px;
+  color: black;
+}
+
 @keyframes chayTrai {
   0% {
-    left: 100%;
+    transform: translateX(0%);
   }
   100% {
-    left: -100%;
+    transform: translateX(-50%);
   }
 }
 
@@ -720,4 +732,8 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 142.857% */
+}
+/* ================================animetion================== */
+.header__logo {
+  animation-iteration-count: infinite;
 }

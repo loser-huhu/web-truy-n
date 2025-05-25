@@ -19,6 +19,7 @@ body.dark-mode .header__list--icon {
 .toggleWrapper {
   position: absolute;
   top: 50%;
+  /* cách thanh search */
   right: -120px;
   overflow: hidden;
   padding: 0 200px;

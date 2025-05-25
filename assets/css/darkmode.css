@@ -20,7 +20,7 @@ body.dark-mode .header__list--icon {
   position: absolute;
   top: 50%;
   /* cách thanh search */
-  right: -120px;
+  right: -50px;
   overflow: hidden;
   padding: 0 200px;
   transform: translate3d(-50%, -50%, 0);
@@ -268,4 +268,9 @@ body.dark-mode .footer__desc,
 body.dark-mode .footer__etc,
 body.dark-mode .footer__call li {
   color: #e0e0e0 !important;
+}
+/* hover box */
+body.dark-mode .novel-item:hover {
+  background: #d80f0f !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }

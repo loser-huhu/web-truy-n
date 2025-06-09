@@ -570,6 +570,7 @@ button {
   text-overflow: ellipsis;
 }
 .rank__strong {
+  display: block;
   width: 24px;
   height: 32px;
   color: #2b2b2b;
@@ -579,6 +580,8 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 146.286% */
+  position: relative;
+  bottom: -7px;
 }
 .rank__heading-low:hover,
 .rank__heading-top1:hover,
@@ -734,6 +737,7 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 142.857% */
+  cursor: pointer;
 }
 /* ================================animetion================== */
 .header__logo {

@@ -1,7 +1,6 @@
 /* Dark Mode Support */
 body.dark-mode {
-  /* background-image: url(/assets/img/Star\ Wars\ Space\ Background\ Image.jpg); */
-  background: #000;
+  background-image: url(/assets/img/bg.jpg) !important;
   color: #f0f0f0;
 }
 
@@ -237,8 +236,7 @@ body.dark-mode .update__row-bg-white,
 body.dark-mode .rank__list,
 body.dark-mode .rank__img,
 body.dark-mode .completed-stories-list {
-  /* background-image: url(/assets/img/Star\ Wars\ Space\ Background\ Image.jpg) !important; */
-  background: #000;
+  background-image: url(/assets/img/bg.jpg) !important;
 }
 
 /* --- DARK MODE CHỮ --- */

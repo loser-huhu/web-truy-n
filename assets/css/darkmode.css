@@ -1,6 +1,7 @@
 /* Dark Mode Support */
 body.dark-mode {
-  background-image: url(/assets/img/Star\ Wars\ Space\ Background\ Image.jpg);
+  /* background-image: url(/assets/img/Star\ Wars\ Space\ Background\ Image.jpg); */
+  background: #000;
   color: #f0f0f0;
 }
 

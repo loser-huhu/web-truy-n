@@ -236,7 +236,8 @@ body.dark-mode .update__row-bg-white,
 body.dark-mode .rank__list,
 body.dark-mode .rank__img,
 body.dark-mode .completed-stories-list {
-  background-image: url(/assets/img/Star\ Wars\ Space\ Background\ Image.jpg) !important;
+  /* background-image: url(/assets/img/Star\ Wars\ Space\ Background\ Image.jpg) !important; */
+  background: #000;
 }
 
 /* --- DARK MODE CHỮ --- */
